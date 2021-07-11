@@ -218,10 +218,10 @@ void    sorter(t_array *a, t_array *b)
 {
     if (a->nb_elements == 2)
 		sort_2(a);
-    if (a->nb_elements == 3)
+    else if (a->nb_elements == 3)
 		sort_3(a);
-	if (a->nb_elements > 3 && a->nb_elements <= 6)
+	else if (a->nb_elements > 3 && a->nb_elements <= 6)
 		sort_5_6(a, b);
-	if (a->nb_elements > 6)
+	else if (a->nb_elements > 6)
 		sort_n(a, b);
 }
