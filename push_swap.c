@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: oidrissi <oidrissi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 09:00:17 by oidrissi          #+#    #+#             */
-/*   Updated: 2021/07/11 03:23:41 by marvin           ###   ########.fr       */
+/*   Updated: 2021/07/13 21:43:36 by oidrissi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,18 +118,18 @@ int main(int ac, char **av)
         i++;
     }
     sorter(a, b);
-	i = 1;
-	while (i <= a->nb_elements)
-	{
-		printf("Stack A|| %d\n", a->values[i - 1]);
-		i++;
-	}
-	i = 1;
-	while (i <= ac - 1)
-	{
-		printf("	    Stack B|| %d\n", b->values[i - 1]);
-		i++;
-	}
+	// i = 1;
+	// while (i <= a->nb_elements)
+	// {
+	// 	printf("Stack A|| %d\n", a->values[i - 1]);
+	// 	i++;
+	// }
+	// i = 1;
+	// while (i <= ac - 1)
+	// {
+	// 	printf("	    Stack B|| %d\n", b->values[i - 1]);
+	// 	i++;
+	// }
 	array_destroyer(b);
 	array_destroyer(a);
     return 1;
